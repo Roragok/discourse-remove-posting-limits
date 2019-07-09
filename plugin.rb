@@ -2,7 +2,7 @@
 # about: Enables symbols to count towards post size.
 # version: 0.1
 # authors: Roragok
-# https://github.com/Roragok/discourse-remove-posting-limits
+# url: https://github.com/Roragok/discourse-remove-posting-limits
 
 class ::TextSentinel
   module RemovePostingLimitsTextSentinel
