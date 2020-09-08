@@ -1,14 +1,13 @@
 # name: Remove Posting Limits
 # about: Enables symbols to count towards post size.
-# version: 0.1
+# version: 1.0
 # authors: Roragok
 # url: https://github.com/Roragok/discourse-remove-posting-limits
 
-class ::TextSentinel
-  module RemovePostingLimitsTextSentinel
-    private def seems_pronounceable?
+after_initialize do
+  class ::TextSentinel
+    def seems_pronounceable?
       @text.size > 0
     end
   end
-  prepend RemovePostingLimitsTextSentinel
 end
